@@ -14,30 +14,42 @@
 <body>
     <div class="container">
 
-        <div class="jumbotron">
+        <div class="jumbotron text-center">
             <h1>Crystal Collector</h1>
         </div>
         <div class="container">
-           <div>Instructions</div>
-           <div>Instructions</div>
-           <div>Instructions</div>
-           <div>Instructions</div>
-        </div>
+            <div class="card m-1">
+                <div>Instructions</div>
+                <div>Instructions</div>
+                <div>Instructions</div>
+                <div>Instructions</div>
+            </div>
         <div class="row">
-            <div id="target" class="col">Random Number</div>
-            <div class="col">
-                <p>Wins</p>
-                <p>Losses</p>
+            <div class="col m-1">
+                <div class="card">
+                    <h5 class="m-1 ml-2">Target Number</h5>
+                    <h5 id="target" class="m-1 ml-2"></h5>
+                </div>
+            </div>
+            <div class="col m-1">
+                <div class="card">
+                    <h6 id="wins" class="m-2">Wins</h6>
+                    <h6 id="losses" class="m-2">Losses</h6>
+                </div>
             </div>
         </div>
         <div class="row">
-                <div class="col"><button id="square1" class="click" value="1">Click One</button></div>
-                <div class="col"><button id="square2" class="click" value="2">Click One</button></div>
-                <div class="col"><button id="square3" class="click" value="3">Click One</button></div>
-                <div class="col"><button id="square4" class="click" value="4">Click One</button></div>
-                    </div>
-        <div class="row">
-            <div class="card">Bootstrap Card</div>
+                <div class="col m-2"><button id="square1" class="click" value="1"><img src="assets/images/powerstone.png" alt="Power Stone"></button></div>
+                <div class="col m-2"><button id="square2" class="click" value="2"><img src="assets/images/realitystone.png" alt="Reality Stone"></button></div>
+                <div class="col m-2"><button id="square3" class="click" value="3"><img src="assets/images/spacestone.png" alt="Space Stone"></button></div>
+                <div class="col m-2"><button id="square4" class="click" value="4"><img src="assets/images/timestone.png" alt="Time Stone"></button></div>
+        </div>
+        <div class="card m-1">
+            <div class="card-body">
+                    <h5 class="card-title">Your Score</h5>
+                    <h5 id="score" class="card-title"></h5>
+            </div>
+        </div>
         </div>
     </div>
     
