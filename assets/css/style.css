@@ -4,3 +4,28 @@ img {
     height: 100px;
     width: 100px;
 }
+
+body, html {
+    height: 100%;
+  }
+  
+  .bg { 
+    background-image: url("spacebg.jpg");
+  
+    height: 100%; 
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  * {
+      color: goldenrod;
+  }
+
+  .jumbotron {
+      background-color: rgb(30, 0, 139);
+  }
+  .card {
+      background-color: rgb(30, 0, 139);
+  }
