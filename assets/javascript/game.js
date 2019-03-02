@@ -18,8 +18,8 @@ $(document).ready(function () {
       totalScore = 0;
       targetNum = numGen(121, 19);
       $("#target").text(targetNum);
-      $("#wins").text("Wins: " + totalWins);
-      $("#losses").text("Losses: " + totalLosses);
+      $("#wins").text("Snapped: " + totalWins);
+      $("#losses").text("Spared: " + totalLosses);
       $("#score").text(totalScore);
       $("#square1").attr("value", numGen(13, 1));
       $("#square2").attr("value", numGen(13, 1));
@@ -29,7 +29,6 @@ $(document).ready(function () {
 
     
 
-
     $(".click").on("click", function () {
       totalScore += parseInt(this.value);
         console.log(totalScore);   
@@ -37,10 +36,12 @@ $(document).ready(function () {
 
         
         if (totalScore === targetNum) {
+          alert(totalScore + " SNAP! Rejoice! You have become Children of Thanos!");
             totalWins++;
         }
     
         if (totalScore > targetNum) {
+          alert(totalScore + " Pity, you have been spared");
           totalLosses++;
         }    
 

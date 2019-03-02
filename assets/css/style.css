@@ -28,4 +28,7 @@ body, html {
   }
   .card {
       background-color: rgb(30, 0, 139);
+    }
+    button {
+        background-color: rgb(30, 0, 139);        
   }
