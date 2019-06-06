@@ -33,7 +33,16 @@ body {
   }
 
   #modal-img {
-    min-width: 300px;
+    width: 300px;
     height: auto;
   }
   
+  @media only screen and (max-width: 425px) {
+    img {
+      height: 80px;
+      width: 80px;
+    }
+    #modal-img {
+      width: 200px;
+    }
+  }
