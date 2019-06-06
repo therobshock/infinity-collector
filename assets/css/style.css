@@ -5,30 +5,35 @@ img {
     width: 100px;
 }
 
-body, html {
+html {
     height: 100%;
   }
   
-  .bg { 
+body { 
     background-image: url("spacebg.jpg");
   
     height: 100%; 
   
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
-  }
+}
 
   * {
       color: goldenrod;
   }
 
-  .jumbotron {
+  .jumbotron, .card, button {
       background-color: rgb(30, 0, 139);
   }
-  .card {
-      background-color: rgb(30, 0, 139);
-    }
-    button {
-        background-color: rgb(30, 0, 139);        
+
+  .modal-header, .modal-footer  {
+    background-color: rgb(35, 32, 41);
   }
+
+  #modal-img {
+    min-width: 300px;
+    height: auto;
+  }
+  

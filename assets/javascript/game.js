@@ -11,7 +11,8 @@ $(document).ready(function () {
   var numGen = function (max, min) {
       return Math.floor(Math.random() * (max - min)) + min;
     }
-
+    
+    $("#startModal").modal('show');
     gameStart();
 
     function gameStart () {
@@ -36,12 +37,14 @@ $(document).ready(function () {
 
         
         if (totalScore === targetNum) {
-          alert(totalScore + " SNAP! Rejoice! You have become Children of Thanos!");
+          // alert(totalScore + " SNAP! Rejoice! You have become Children of Thanos!");
+          $("#snapModal").modal("show");
             totalWins++;
         }
     
         if (totalScore > targetNum) {
-          alert(totalScore + " Pity, you have been spared");
+          // alert(totalScore + " Pity, you have been spared");
+          $("#sparedModal").modal("show");
           totalLosses++;
         }    
 
